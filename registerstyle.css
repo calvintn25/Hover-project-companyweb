@@ -6,12 +6,8 @@ body{
 .custom-input{
     border-radius: 10px;
     height: 40px;
-    background-color: black;
 }
 
-input{
-    background-color: black;
-}
 
 .register-btn {
     background-color: #FF9934;
