@@ -30,12 +30,25 @@
           padding: 20px;
           background-color: #0d6efd;
       }
-      
   </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+      var toastList = toastElList.map(function (toastEl) {
+        return new bootstrap.Toast(toastEl, {
+          animation: true,
+          autohide: true,
+          delay: 5000
+        }).show();
+      });
+    });
+  </script>
+
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="120" height="80" class="d-inline-block align-text-top"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="120" height="90" class="d-inline-block align-text-top"></a>
         <ul class="nav nav-underline">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="admin-dashboard.html">Dashboard</a>
@@ -64,7 +77,24 @@
       </div>
 
       <div class="container main-content">
-        <span>You are logged in</span>
+          <div class="toast align-items-center text-bg-primary border-0 mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+              <div class="toast-body">
+                You have Logged In!
+              </div>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+          </div>
+        <form action="">
+          <label for="image" class="form-label">Change "About Us" Image</label>
+          <input type="file" class="form-control" id="image">
+          <br>
+          <label for="desc" class="form-label">Description</label>
+          <textarea class="form-control" aria-label="With textarea" id="desc"></textarea>
+          <br><br>
+          <button type="button" class="btn btn-dark float-end">Submit</button>
+          <br><br>
+        </form>
       </div>
     </main>
 

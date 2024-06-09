@@ -24,7 +24,7 @@ custom-margin-body{
 
 .custom-logo {
   width: 420px;
-  height:300px;
+  height:330px;
 }
 
 .custom-margin{
@@ -35,10 +35,17 @@ custom-margin-body{
   margin-left: 200px;
 }
 
-.logo-custom{ 
+
+.custom a{
+  text-decoration: none;
+  cursor: default;
+}
+
+.custom img{
   border-radius: 100px;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
 }
 
 #btt{
