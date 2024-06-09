@@ -59,6 +59,9 @@
             <li>
                 <a class="nav-link" href="product.html">Product</a>
             </li>
+            <li>
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
         </ul>
         
         <div class="ms-auto d-flex align-items-center">
@@ -85,17 +88,55 @@
               <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
           </div>
-        <form action="">
-          <label for="image" class="form-label">Change "About Us" Image</label>
-          <input type="file" class="form-control" id="image">
-          <br>
-          <label for="desc" class="form-label">Description</label>
-          <textarea class="form-control" aria-label="With textarea" id="desc"></textarea>
-          <br><br>
-          <button type="button" class="btn btn-dark float-end">Submit</button>
-          <br><br>
-        </form>
+
+          <div class="d-flex ms-5 mb-4">
+            <a href="add-top-product.html">
+              <button class="btn btn-primary me-5" type="button"><i class="fa-solid fa-plus"></i> Add Top Product</button>
+            </a>
+          </div>
+    
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Image</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>     
+              <tr>
+                <th scope="row">1</th>
+                <td>Top Sales 1</td>
+                <td>image</td>
+                <td>
+                  <button class="btn btn-primary">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Top Sales 2</td>
+                <td>image</td>
+                <td>
+                  <button class="btn btn-primary">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Top Sales 3</td>
+                <td>image</td>
+                <td>
+                  <button class="btn btn-primary">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
       </div>
+
     </main>
 
     

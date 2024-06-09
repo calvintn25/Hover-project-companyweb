@@ -22,6 +22,7 @@ custom-margin-body{
   font-size: 22px;
 }
 
+/* Custom CSS for logo in footer*/
 .custom-logo {
   width: 420px;
   height:330px;
@@ -48,6 +49,7 @@ custom-margin-body{
   cursor: pointer;
 }
 
+/* CSS for scroll back to top button*/
 #btt{
   border-radius: 50%;
   position: fixed;
